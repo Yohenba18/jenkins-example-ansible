@@ -1,5 +1,5 @@
 pipeline {
-  agent {label 'linux'}
+  agent {label 'ec2'}
 
   stages {
     stage('Hello') {
