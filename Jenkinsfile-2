@@ -1,7 +1,7 @@
 pipeline {
-  agent { label 'linux' }
+  agent { label 'ec2 }
   environment {
-   ANSIBLE_PRIVATE_KEY=credentials('mariadb-private-key') 
+   ANSIBLE_PRIVATE_KEY=credentials('ubuntu') 
   }
   stages {
     stage('Hello') {
